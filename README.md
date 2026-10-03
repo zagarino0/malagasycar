@@ -1,27 +1,33 @@
-# MALAGASYCAR — maquette HTML/CSS/JS
+# MALAGASYCAR — site de réservation
 
-Cette version utilise le **logo officiel MALAGASYCAR fourni dans la conversation** (`assets/logo-malagasycar.png`). Aucune dépendance au logo Annumada n'est utilisée.
+Maquette légère en HTML/CSS/JavaScript pour MALAGASYCAR — Transport Première Classe.
 
-## Pages
-- `index.html` — accueil
-- `voyages.html` — voyages
-- `location.html` — location de véhicules et disponibilité
-- `destinations.html` — destinations
-- `galerie.html` — galerie
-- `avis.html` — avis
-- `contact.html` — contact
-- `reservation.html` — réservation avec choix de siège / dates de location
-- `admin.html` — dashboard administrateur
+## Fonctionnalités
 
-## Workflow location
-1. Le client choisit le véhicule et les dates.
-2. Le client envoie sa demande de paiement.
-3. La demande passe en `En attente` et bloque la même période dans la maquette.
-4. L'administrateur valide le paiement dans `admin.html`.
-5. La location passe à `Confirmée` et le véhicule affiche `Indisponible` pour la période.
-6. L'administrateur peut annuler la location ; le véhicule redevient disponible.
+- Accueil, voyages, destinations, galerie, avis et contact
+- Réservation de voyage avec choix du siège
+- Informations client : nom et téléphone
+- Pop-up obligatoire de récapitulatif avant paiement
+- Numéro de ticket unique
+- Affichage du montant total, acompte de 50 % et solde restant
+- Location de véhicules avec choix des dates
+- Vérification des chevauchements de réservation
+- Paiement en attente puis validation administrateur
+- Véhicule marqué indisponible après validation
+- Annulation d'une location et libération de la période
+- Calendrier de disponibilité
+- Dashboard administrateur
+- Interface responsive mobile/tablette/desktop
 
-Les données de démonstration sont conservées dans `localStorage` sous la clé `malagasycarDemo`.
+## Stack
 
-## Important
-Les photos, tarifs, avis, moyens de paiement et textes opérationnels restent des contenus de démonstration à valider avec MALAGASYCAR avant mise en production.
+- HTML5
+- CSS3
+- JavaScript Vanilla
+- LocalStorage pour la démonstration
+
+## Mise en production
+
+Pour une version réelle, remplacer LocalStorage par une API + base de données et connecter le paiement au moyen de paiement retenu par MALAGASYCAR.
+
+Les tarifs, horaires, photos, avis, coordonnées opérationnelles et moyens de paiement doivent être validés par MALAGASYCAR avant production.
