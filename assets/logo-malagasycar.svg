@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+<defs><path id="arc" d="M105 405 A225 225 0 0 0 495 405"/></defs>
+<circle cx="300" cy="300" r="270" fill="#0b9f3f" stroke="#111" stroke-width="8"/>
+<path d="M190 180 C145 220 125 275 138 338 C146 378 165 407 188 427" fill="none" stroke="#9bd6a0" stroke-width="18" stroke-linecap="round"/>
+<g fill="#f2e95b" stroke="#e4dc4b" stroke-width="3">
+<path d="M312 170 C282 126 281 92 301 55 C327 94 330 118 322 142 C350 105 381 96 413 110 C388 132 362 143 338 146 C373 144 397 157 414 181 C382 180 355 172 334 158 C344 189 335 211 315 230 C304 205 304 185 312 170Z"/>
+<ellipse cx="310" cy="348" rx="92" ry="42"/>
+<path d="M218 346 C235 317 273 299 328 302 C375 305 397 322 404 349 C382 370 345 384 298 386 C259 386 232 372 218 346Z"/>
+<ellipse cx="267" cy="347" rx="16" ry="10" fill="#0b9f3f"/>
+<ellipse cx="348" cy="335" rx="17" ry="10" fill="#0b9f3f"/>
+<circle cx="250" cy="378" r="22" fill="#0b9f3f"/><circle cx="369" cy="378" r="22" fill="#0b9f3f"/>
+<circle cx="250" cy="378" r="9" fill="#f2e95b"/><circle cx="369" cy="378" r="9" fill="#f2e95b"/>
+<path d="M398 349 C425 350 442 341 452 329" fill="none" stroke="#f2e95b" stroke-width="10" stroke-linecap="round"/>
+</g>
+<text x="300" y="488" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="3">MALAGASYCAR</text>
+<path d="M145 448 Q300 505 455 448" fill="none" stroke="#fff" stroke-width="4" opacity=".85"/>
+</svg>
