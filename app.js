@@ -30,8 +30,8 @@ $$(".rent").forEach(btn=>btn.onclick=()=>{const card=btn.closest(".car-card"),st
 if($("#reservation-app")){
   const params=new URLSearchParams(location.search),type=params.get("type")||"travel",car=params.get("car")||"Toyota Corolla";
   if(type==="rental"){$("#travel-step")?.classList.add("hidden");$("#rental-step")?.classList.remove("hidden");$("#booking-kind").textContent="Location de voiture";$("#car-name").textContent=car;const s=$("#r-start"),e=$("#r-end");s.value=params.get("start")||iso(plus(today,1));e.value=params.get("end")||iso(plus(today,4))}else{$("#travel-step")?.classList.remove("hidden");$("#rental-step")?.classList.add("hidden")}
-  let selectedSeat=null;const occupied=[2,5,8,11],seatGrid=$("#seats");
-  if(seatGrid)for(let i=1;i<=12;i++){const b=document.createElement("button");b.type="button";b.className="seat"+(occupied.includes(i)?" busy":"");b.textContent=String(i).padStart(2,"0");if(!occupied.includes(i))b.onclick=()=>{$$(".seat",seatGrid).forEach(x=>x.classList.remove("selected"));b.classList.add("selected");selectedSeat=i;$("#seat-value").textContent=String(i).padStart(2,"0")};seatGrid.appendChild(b)}
+  let selectedSeat=null;const occupied=[2,5],seatGrid=$("#seats");
+  if(seatGrid)for(let i=1;i<=7;i++){const b=document.createElement("button");b.type="button";b.className="seat"+(occupied.includes(i)?" busy":"");b.textContent=String(i).padStart(2,"0");if(!occupied.includes(i))b.onclick=()=>{$$(".seat",seatGrid).forEach(x=>x.classList.remove("selected"));b.classList.add("selected");selectedSeat=i;$("#seat-value").textContent=String(i).padStart(2,"0")};seatGrid.appendChild(b)}
   function rentalCalc(){const s=$("#r-start")?.value,e=$("#r-end")?.value,n=daysBetween(s,e),price=car.includes("RAV4")?260000:car.includes("Minibus")?420000:180000;$("#r-days")&&($("#r-days").textContent=n+" jour(s)",$("#r-total").textContent=(n*price).toLocaleString("fr-FR")+" Ar");return[n,price]}
   $("#r-start")?.addEventListener("change",rentalCalc);$("#r-end")?.addEventListener("change",rentalCalc);rentalCalc();
   let travelTicket=null;
